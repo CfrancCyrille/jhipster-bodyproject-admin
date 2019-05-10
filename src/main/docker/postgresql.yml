@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhbodyprojectadmin-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/jhBodyProjectAdmin/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhBodyProjectAdmin
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
